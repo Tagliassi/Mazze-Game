@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Aventura Fantástica</title>
+    <link rel="stylesheet" href="./../css/interface.css">
+</head>
+<body>
+    <!-- Container principal do jogo -->
+    <div class="game-container">
+        <!-- Imagem de fundo do jogo -->
+        <img src="./../../assets/cenario/tela-inicial.png" alt="Cena do Jogo" class="game-background">
+        
+        <!-- Descrição do jogo -->
+        <div class="game-description">
+            <p class="game-text"></p>
+        </div>
+        
+        <!-- Status do jogador e monstro -->
+        <div style="display: flex; gap: 100px;">
+            <!-- Status do jogador -->
+            <div class="player-status">
+                <p>Vida Atual do Player:</p>
+                <div class="hearts">
+                    <img src="./../../assets/elementos/hearts.png" alt="Coração" class="heart">
+                </div>
+            </div>
+            
+            <!-- Status do monstro (inicialmente oculto) -->
+            <div class="monster-status" style="display: none;">
+                <p>Vida Atual do Monstro:</p>
+                <div class="hearts">
+                    <img src="./../../assets/elementos/hearts.png" alt="Coração" class="heart">
+                </div>
+            </div>
+        </div>
+        
+        <!-- Controles do jogo -->
+        <div class="game-controls">
+            <button id="move-left">←</button>
+            <button id="move-up">↑</button>
+            <button id="move-down">↓</button>
+            <button id="move-right">→</button>
+            
+            <!-- Botão de ataque (inicialmente oculto) -->
+            <button id="fight" style="display: none;">ATACAR</button>
+        </div>
+    </div>
+    
+    <!-- Script JavaScript do jogo -->
+    <script type="module" src="./../../scripts/script.js"></script>
+</body>
+</html>
