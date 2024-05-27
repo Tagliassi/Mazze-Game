@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre - Jogo de Aventura Fantástica</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./../css/sobre.css">
+</head>
+<body>
+    <!-- Tela Sobre -->
+    <div id="about">
+        <h1>Sobre</h1>
+        <p>Equipe:</p>
+        <ul>
+            <li>Rafael Galafassi</li>
+            <li>Vinicius Costa</li>
+            <li>Marcos Vinicius</li>
+            <li>Vinicius Viana</li>
+        </ul>
+        <button id="start-button">Jogar</button>
+    </div>
+
+    <!-- Imagem de fundo do jogo -->
+    <img src="./../../assets/cenario/tela-inicial.png" alt="Cena do Jogo" class="game-background">
+
+    <script>
+        document.getElementById('start-button').addEventListener('click', () => {
+            window.location.href = './interface.html';
+        });
+    </script>
+</body>
+</html>

@@ -234,19 +234,3 @@ export class Personagem {
 
   //#endregion
 }
-
-//   iniciarAcao() {
-//     if (this.arma) {
-//       const danoTotal = this.dano + this.arma.dano;
-//       console.log(`${this.nome} atacou com ${this.arma.nome} causando ${danoTotal} de dano.`);
-//     } else {
-//       console.log(`${this.nome} atacou causando ${this.dano} de dano.`);
-//     }
-
-//     // Verifique se há um monstro na localização atual e inicie uma batalha
-//     const localizacaoAtual = this.obterLocalizacaoExata();
-//     if (localizacaoAtual.monstro) {
-//       this.iniciarBatalhaComMonstro(localizacaoAtual.monstro);
-//     }
-  
-

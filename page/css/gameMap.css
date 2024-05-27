@@ -1,0 +1,43 @@
+/* Estilos para o contêiner do mapa */
+#map {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilos para cada linha do mapa */
+.map-row {
+    display: flex;
+}
+
+/* Estilos para cada localização no mapa */
+.map-location {
+    width: 100px; /* Ajuste conforme necessário */
+    height: 100px; /* Ajuste conforme necessário */
+    background-size: cover;
+    border: 1px solid black; /* Adicione uma borda para separar as localizações */
+    margin: 2px; /* Espaçamento entre as localizações */
+    position: relative; /* Para permitir que o texto descritivo seja posicionado absolutamente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #7f8c8d; /* Cor de fundo padrão */
+}
+
+/* Estilos para o texto descritivo */
+.map-location p {
+    position: absolute;
+    bottom: 5px; /* Ajuste conforme necessário */
+    left: 5px; /* Ajuste conforme necessário */
+    color: white; /* Cor do texto */
+    font-size: 12px; /* Tamanho da fonte */
+    text-align: center;
+}
+
+/* Estilos para ícones */
+.map-location .icon {
+    width: 50px; /* Tamanho do ícone */
+    height: 50px; /* Tamanho do ícone */
+    background-size: contain;
+    background-repeat: no-repeat;
+}
