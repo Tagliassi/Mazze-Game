@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon running game</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>Pokemon running game</h1>
+    <canvas id="screen" width="750" height="250"></canvas>
+    <div class="container">
+        <button type="button" class="btn" onclick="location.href='index.html'">Sair</button>
+        <button id="playAgainBtn" type="button" class="btn hidden" onclick="playAgain()">Jogar Novamente</button>
+        
+        <label for="musicSelect">Escolha a música de fundo:</label>
+        <select id="musicSelect" onchange="changeBackgroundMusic()">
+            <option value="./audio/SaveTube.io - What is love slowed and reverb (128 kbps).mp3">What is love</option>
+            <option value="./audio/System of a Down - Toxicity.mp3">Toxicity</option>
+            <option value="./audio/Bôa - Duvet.mp3">Duvet</option>
+            <option value="./audio/aruarian dance.mp3">You have no enemies</option>
+            <option value="./audio/50 cent - Many Men.mp3">Many Men</option>
+        </select>
+    </div>
+    <audio id="bgMusic" loop></audio>
+</body>
+</html>

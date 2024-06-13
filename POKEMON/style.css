@@ -1,9 +1,17 @@
 body {
   font-family:'Courier New', Courier, monospace;
   text-align: center;
+  color: aliceblue;
+  background-color: rgb(37, 37, 37);
 }
 
-#board {
-  background-color: lightgray;
+#screen {
+  background-image: url('img/pokemonbg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 1024;
+  height: 576;
   border-bottom: 1px solid black;
 }
+
