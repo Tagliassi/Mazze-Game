@@ -1,11 +1,70 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+    body {
+        color: #fffbf3; /* Cor do texto */
+        background-color: #252525; /* Cor de fundo */
+        font-family: 'Press Start 2P', cursive; /* Fonte pixelada */
+        font-size: 16px; /* Tamanho da fonte */
+        display: flex; /* Usar flexbox para centralizar */
+        justify-content: center; /* Centralizar horizontalmente */
+        align-items: center; /* Centralizar verticalmente */
+        height: 100vh; /* Altura total da tela */
+        margin: 0; /* Remover margens */
+    }
+    .pixelart {
+        width: 1px;
+        height: 1px;
+        transform: scale(2);
+        background: transparent;
+        box-shadow: 13px 0px #2c2b2c, 14px 0px #2c2b2c, 16px 0px #2c2b2c, 17px 0px #2c2b2c, 12px 1px #2c2b2c, 13px 1px #26b300, 14px 1px #10ff1c, 15px 1px #2c2b2c, 16px 1px #26b300, 17px 1px #10ff1c, 18px 1px #2c2b2c, 11px 2px #2c2b2c, 12px 2px #016f00, 13px 2px #26b300, 14px 2px #fefcfc, 15px 2px #fefcfc, 16px 2px #fefcfc, 17px 2px #fefcfc, 18px 2px #10ff1c, 19px 2px #2c2b2c, 8px 3px #2c2b2c, 9px 3px #2c2b2c, 10px 3px #2c2b2c, 11px 3px #2c2b2c, 12px 3px #016f00, 13px 3px #fefcfc, 14px 3px #fefcfc, 15px 3px #2c2b2c, 16px 3px #fefcfc, 17px 3px #2c2b2c, 18px 3px #fefcfc, 19px 3px #2c2b2c, 7px 4px #2c2b2c, 8px 4px #fe3217, 9px 4px #ff7e14, 10px 4px #ff7e14, 11px 4px #2c2b2c, 12px 4px #fefcfc, 13px 4px #fefcfc, 14px 4px #fefcfc, 15px 4px #2c2b2c, 16px 4px #fefcfc, 17px 4px #2c2b2c, 18px 4px #fefcfc, 19px 4px #2c2b2c, 7px 5px #2c2b2c, 8px 5px #9c1d00, 9px 5px #fe3217, 10px 5px #2c2b2c, 11px 5px #2c2b2c, 12px 5px #fefcfc, 13px 5px #fefcfc, 14px 5px #fefcfc, 15px 5px #fefcfc, 16px 5px #fefcfc, 17px 5px #fefcfc, 18px 5px #fefcfc, 19px 5px #2c2b2c, 20px 5px #2c2b2c, 21px 5px #2c2b2c, 7px 6px #2c2b2c, 8px 6px #2c2b2c, 9px 6px #2c2b2c, 10px 6px #10ff1c, 11px 6px #10ff1c, 12px 6px #016f00, 13px 6px #fefcfc, 14px 6px #fefcfc, 15px 6px #fefcfc, 16px 6px #016f00, 17px 6px #fefcfc, 18px 6px #2c2b2c, 19px 6px #10ff1c, 20px 6px #10ff1c, 21px 6px #10ff1c, 22px 6px #2c2b2c, 6px 7px #2c2b2c, 7px 7px #ff7e14, 8px 7px #2c2b2c, 9px 7px #26b300, 10px 7px #10ff1c, 11px 7px #fefcfc, 12px 7px #10ff1c, 13px 7px #016f00, 14px 7px #016f00, 15px 7px #016f00, 16px 7px #10ff1c, 17px 7px #016f00, 18px 7px #10ff1c, 19px 7px #10ff1c, 20px 7px #fefcfc, 21px 7px #fefcfc, 22px 7px #10ff1c, 23px 7px #2c2b2c, 5px 8px #2c2b2c, 6px 8px #9c1d00, 7px 8px #9c1d00, 8px 8px #2c2b2c, 9px 8px #016f00, 10px 8px #26b300, 11px 8px #fefcfc, 12px 8px #fefcfc, 13px 8px #fefcfc, 14px 8px #10ff1c, 15px 8px #26b300, 16px 8px #10ff1c, 17px 8px #10ff1c, 18px 8px #10ff1c, 19px 8px #2c2b2c, 20px 8px #fefcfc, 21px 8px #2c2b2c, 22px 8px #10ff1c, 23px 8px #2c2b2c, 5px 9px #2c2b2c, 6px 9px #9c1d00, 7px 9px #9c1d00, 8px 9px #2c2b2c, 9px 9px #016f00, 10px 9px #26b300, 11px 9px #fefcfc, 12px 9px #fefcfc, 13px 9px #fefcfc, 14px 9px #fefcfc, 15px 9px #2c2b2c, 16px 9px #26b300, 17px 9px #26b300, 18px 9px #10ff1c, 19px 9px #10ff1c, 20px 9px #10ff1c, 21px 9px #10ff1c, 22px 9px #10ff1c, 23px 9px #2c2b2c, 6px 10px #2c2b2c, 7px 10px #2c2b2c, 8px 10px #2c2b2c, 9px 10px #016f00, 10px 10px #26b300, 11px 10px #fefcfc, 12px 10px #fefcfc, 13px 10px #fefcfc, 14px 10px #fefcfc, 15px 10px #2c2b2c, 16px 10px #26b300, 17px 10px #26b300, 18px 10px #10ff1c, 19px 10px #10ff1c, 20px 10px #10ff1c, 21px 10px #10ff1c, 22px 10px #10ff1c, 23px 10px #2c2b2c, 7px 11px #2c2b2c, 8px 11px #fe3217, 9px 11px #2c2b2c, 10px 11px #016f00, 11px 11px #016f00, 12px 11px #ffba93, 13px 11px #ffba93, 14px 11px #2c2b2c, 15px 11px #2c2b2c, 16px 11px #016f00, 17px 11px #016f00, 18px 11px #26b300, 19px 11px #26b300, 20px 11px #26b300, 21px 11px #26b300, 22px 11px #26b300, 23px 11px #2c2b2c, 8px 12px #2c2b2c, 9px 12px #2c2b2c, 10px 12px #2c2b2c, 11px 12px #016f00, 12px 12px #016f00, 13px 12px #ffba93, 14px 12px #ffba93, 15px 12px #2c2b2c, 16px 12px #016f00, 17px 12px #016f00, 18px 12px #016f00, 19px 12px #016f00, 20px 12px #26b300, 21px 12px #26b300, 22px 12px #2c2b2c, 8px 13px #2c2b2c, 9px 13px #fe3217, 10px 13px #2c2b2c, 11px 13px #016f00, 12px 13px #26b300, 13px 13px #ffa5aa, 14px 13px #ffa5aa, 15px 13px #fefcfc, 16px 13px #2c2b2c, 17px 13px #016f00, 18px 13px #016f00, 19px 13px #016f00, 20px 13px #2c2b2c, 21px 13px #2c2b2c, 5px 14px #2c2b2c, 6px 14px #2c2b2c, 7px 14px #2c2b2c, 8px 14px #2c2b2c, 9px 14px #2c2b2c, 10px 14px #016f00, 11px 14px #26b300, 12px 14px #26b300, 13px 14px #ffa5aa, 14px 14px #ffa5aa, 15px 14px #2c2b2c, 16px 14px #2c2b2c, 17px 14px #2c2b2c, 18px 14px #2c2b2c, 19px 14px #2c2b2c, 4px 15px #2c2b2c, 5px 15px #ff7e14, 6px 15px #fefcfc, 7px 15px #2c2b2c, 8px 15px #2c2b2c, 9px 15px #2c2b2c, 10px 15px #016f00, 11px 15px #26b300, 12px 15px #fefcfc, 13px 15px #fefcfc, 14px 15px #fefcfc, 15px 15px #2c2b2c, 16px 15px #2c2b2c, 2px 16px #2c2b2c, 3px 16px #2c2b2c, 4px 16px #ff7e14, 5px 16px #ff7e14, 6px 16px #2c2b2c, 7px 16px #2c2b2c, 8px 16px #10ff1c, 9px 16px #10ff1c, 10px 16px #10ff1c, 11px 16px #10ff1c, 12px 16px #fefcfc, 13px 16px #fefcfc, 14px 16px #fefcfc, 15px 16px #2c2b2c, 16px 16px #fefcfc, 17px 16px #2c2b2c, 0px 17px #2c2b2c, 1px 17px #2c2b2c, 2px 17px #2c2b2c, 3px 17px #fefcfc, 4px 17px #2c2b2c, 5px 17px #2c2b2c, 6px 17px #26b300, 7px 17px #26b300, 8px 17px #10ff1c, 9px 17px #10ff1c, 10px 17px #2c2b2c, 11px 17px #fefcfc, 12px 17px #fefcfc, 13px 17px #fefcfc, 14px 17px #2c2b2c, 15px 17px #2c2b2c, 16px 17px #fefcfc, 17px 17px #10ff1c, 18px 17px #2c2b2c, 0px 18px #2c2b2c, 1px 18px #10ff1c, 2px 18px #26b300, 3px 18px #2c2b2c, 4px 18px #2c2b2c, 5px 18px #10ff1c, 6px 18px #10ff1c, 7px 18px #10ff1c, 8px 18px #10ff1c, 9px 18px #2c2b2c, 10px 18px #fefcfc, 11px 18px #fefcfc, 12px 18px #fefcfc, 13px 18px #2c2b2c, 14px 18px #2c2b2c, 15px 18px #10ff1c, 16px 18px #10ff1c, 17px 18px #10ff1c, 18px 18px #2c2b2c, 0px 19px #2c2b2c, 1px 19px #fefcfc, 2px 19px #016f00, 3px 19px #2c2b2c, 4px 19px #10ff1c, 5px 19px #10ff1c, 6px 19px #10ff1c, 7px 19px #10ff1c, 8px 19px #fefcfc, 9px 19px #fefcfc, 10px 19px #2c2b2c, 11px 19px #fefcfc, 12px 19px #fefcfc, 13px 19px #fefcfc, 14px 19px #2c2b2c, 15px 19px #2c2b2c, 16px 19px #10ff1c, 17px 19px #10ff1c, 18px 19px #2c2b2c, 0px 20px #2c2b2c, 1px 20px #fefcfc, 2px 20px #fefcfc, 3px 20px #2c2b2c, 4px 20px #26b300, 5px 20px #10ff1c, 6px 20px #10ff1c, 7px 20px #fefcfc, 8px 20px #fefcfc, 9px 20px #2c2b2c, 10px 20px #2c2b2c, 11px 20px #fefcfc, 12px 20px #fefcfc, 13px 20px #fefcfc, 14px 20px #2c2b2c, 15px 20px #2c2b2c, 16px 20px #10ff1c, 17px 20px #10ff1c, 18px 20px #2c2b2c, 1px 21px #2c2b2c, 2px 21px #fed1ad, 3px 21px #2c2b2c, 4px 21px #016f00, 5px 21px #26b300, 6px 21px #10ff1c, 7px 21px #10ff1c, 8px 21px #10ff1c, 9px 21px #10ff1c, 10px 21px #10ff1c, 11px 21px #2c2b2c, 12px 21px #fefcfc, 13px 21px #fefcfc, 14px 21px #fefcfc, 15px 21px #2c2b2c, 16px 21px #10ff1c, 17px 21px #2c2b2c, 1px 22px #2c2b2c, 2px 22px #fed1ad, 3px 22px #fefcfc, 4px 22px #2c2b2c, 5px 22px #016f00, 6px 22px #26b300, 7px 22px #26b300, 8px 22px #26b300, 9px 22px #2c2b2c, 10px 22px #fefcfc, 11px 22px #fefcfc, 12px 22px #fed1ad, 13px 22px #2c2b2c, 14px 22px #2c2b2c, 15px 22px #2c2b2c, 16px 22px #2c2b2c, 17px 22px #2c2b2c, 2px 23px #2c2b2c, 3px 23px #2c2b2c, 4px 23px #2c2b2c, 5px 23px #2c2b2c, 6px 23px #2c2b2c, 7px 23px #2c2b2c, 8px 23px #2c2b2c, 9px 23px #2c2b2c, 10px 23px #fed1ad, 11px 23px #fed1ad, 12px 23px #fed1ad, 13px 23px #ffba93, 14px 23px #2c2b2c, 2px 24px #2c2b2c, 3px 24px #a33000, 4px 24px #f65300, 5px 24px #f99200, 6px 24px #f99200, 7px 24px #2c2b2c, 8px 24px #ffba93, 9px 24px #ffba93, 10px 24px #2c2b2c, 11px 24px #2c2b2c, 12px 24px #2c2b2c, 2px 25px #2c2b2c, 3px 25px #a33000, 4px 25px #f65300, 5px 25px #f99200, 6px 25px #f99200, 7px 25px #2c2b2c, 8px 25px #2c2b2c, 9px 25px #2c2b2c, 10px 25px #f99200, 11px 25px #2c2b2c, 12px 25px #2c2b2c, 13px 25px #2c2b2c, 1px 26px #2c2b2c, 2px 26px #a33000, 3px 26px #a33000, 4px 26px #a33000, 5px 26px #f65300, 6px 26px #fefcfc, 7px 26px #f99200, 8px 26px #2c2b2c, 9px 26px #a33000, 10px 26px #f65300, 11px 26px #f99200, 12px 26px #f99200, 13px 26px #fefcfc, 14px 26px #2c2b2c, 1px 27px #2c2b2c, 2px 27px #a33000, 3px 27px #a33000, 4px 27px #f65300, 5px 27px #f99200, 6px 27px #f99200, 7px 27px #f99200, 8px 27px #2c2b2c, 9px 27px #a33000, 10px 27px #a33000, 11px 27px #f65300, 12px 27px #f65300, 13px 27px #f99200, 14px 27px #2c2b2c;
+    }
+    .pixelart2 {
+        width: 1px;
+        height: 1px;
+        transform: scale(2);
+        align-self: center;
+        background: transparent;
+        box-shadow: 7px 0px #500000, 8px 0px #500000, 9px 0px #500000, 10px 0px #500000, 11px 0px #500000, 5px 1px #500000, 6px 1px #500000, 7px 1px #f84070, 8px 1px #f84070, 9px 1px #f8d870, 10px 1px #f84070, 11px 1px #500000, 12px 1px #500000, 4px 2px #500000, 5px 2px #f84070, 6px 2px #f84070, 7px 2px #b02860, 8px 2px #b02860, 9px 2px #d8a038, 10px 2px #f8d870, 11px 2px #ffffff, 12px 2px #500000, 3px 3px #500000, 4px 3px #b02860, 5px 3px #f84070, 6px 3px #b02860, 7px 3px #b02860, 8px 3px #000000, 9px 3px #000000, 10px 3px #000000, 11px 3px #000000, 12px 3px #000000, 13px 3px #000000, 2px 4px #500000, 3px 4px #b02860, 4px 4px #b02860, 5px 4px #b02860, 6px 4px #000000, 7px 4px #000000, 8px 4px #000000, 9px 4px #000000, 10px 4px #000000, 11px 4px #000000, 12px 4px #000000, 13px 4px #000000, 14px 4px #000000, 2px 5px #500000, 3px 5px #f8d0c0, 4px 5px #000000, 5px 5px #000000, 6px 5px #000000, 7px 5px #f87068, 8px 5px #000000, 9px 5px #f87068, 10px 5px #000000, 11px 5px #f87068, 1px 6px #500000, 2px 6px #f8d0c0, 3px 6px #885818, 4px 6px #f8d0c0, 5px 6px #000000, 6px 6px #f87068, 7px 6px #f8d0c0, 8px 6px #000000, 9px 6px #f8d0c0, 10px 6px #000000, 11px 6px #f8d0c0, 12px 6px #885818, 13px 6px #885818, 1px 7px #500000, 2px 7px #f87068, 3px 7px #885818, 4px 7px #f8d0c0, 5px 7px #000000, 6px 7px #000000, 7px 7px #f8d0c0, 8px 7px #f8d0c0, 9px 7px #f8d0c0, 10px 7px #f8d0c0, 11px 7px #f8d0c0, 12px 7px #f8d0c0, 13px 7px #f8d0c0, 14px 7px #885818, 1px 8px #500000, 2px 8px #000000, 3px 8px #f87068, 4px 8px #f8d0c0, 5px 8px #000000, 6px 8px #f8d0c0, 7px 8px #f8d0c0, 8px 8px #000000, 9px 8px #f87068, 10px 8px #f87068, 11px 8px #f87068, 12px 8px #f87068, 13px 8px #f87068, 14px 8px #885818, 2px 9px #000000, 3px 9px #885818, 4px 9px #885818, 5px 9px #f87068, 6px 9px #f87068, 7px 9px #f87068, 8px 9px #000000, 9px 9px #000000, 10px 9px #000000, 11px 9px #000000, 12px 9px #000000, 13px 9px #000000, 3px 10px #000000, 4px 10px #885818, 5px 10px #885818, 6px 10px #f87068, 7px 10px #f87068, 8px 10px #000000, 9px 10px #000000, 10px 10px #000000, 11px 10px #000000, 4px 11px #500000, 5px 11px #b02860, 6px 11px #885818, 7px 11px #885818, 8px 11px #885818, 9px 11px #885818, 10px 11px #203088, 3px 12px #500000, 4px 12px #b02860, 5px 12px #b02860, 6px 12px #f84070, 7px 12px #408098, 8px 12px #408098, 9px 12px #80d8c8, 10px 12px #80d8c8, 11px 12px #203088, 3px 13px #500000, 4px 13px #885818, 5px 13px #885818, 6px 13px #885818, 7px 13px #408098, 8px 13px #ffffff, 9px 13px #ffffff, 10px 13px #80d8c8, 11px 13px #ffffff, 12px 13px #203088, 3px 14px #885818, 4px 14px #ffffff, 5px 14px #ffffff, 6px 14px #ffffff, 7px 14px #885818, 8px 14px #ffffff, 9px 14px #ffffff, 10px 14px #80d8c8, 11px 14px #ffffff, 12px 14px #203088, 3px 15px #885818, 4px 15px #ffffff, 5px 15px #ffffff, 6px 15px #885818, 7px 15px #408098, 8px 15px #408098, 9px 15px #203088, 10px 15px #408098, 11px 15px #203088, 3px 16px #885818, 4px 16px #ffffff, 5px 16px #ffffff, 6px 16px #885818, 7px 16px #408098, 8px 16px #203088, 9px 16px #408098, 10px 16px #203088, 4px 17px #885818, 5px 17px #885818, 6px 17px #885818, 7px 17px #885818, 8px 17px #000000, 9px 17px #885818, 10px 17px #000000, 4px 18px #000000, 5px 18px #885818, 6px 18px #885818, 7px 18px #885818, 8px 18px #f8d870, 9px 18px #000000, 10px 18px #f8d870, 11px 18px #000000, 4px 19px #000000, 5px 19px #000000, 6px 19px #000000, 7px 19px #000000, 8px 19px #000000, 9px 19px #000000, 10px 19px #000000, 11px 19px #000000;
+    }
+
+    .container {
+        padding: 40px; /* Espaçamento interno */
+        border: 10px solid #fff; /* Borda branca para simular pixels */
+        box-shadow: 0 0 0 10px #ff0000, 0 0 0 20px #fff; /* Sombra de borda para efeito pixel */
+        text-align: center; /* Centralizar texto */
+    }
+
+    h1 {
+        font-size: 24px; /* Tamanho do título */
+        margin-bottom: 20px; /* Espaçamento abaixo do título */
+    }
+
+    p {
+        margin-bottom: 20px; /* Espaçamento abaixo do parágrafo */
+    }
+
+    li {
+        margin-bottom: 10px; /* Espaçamento entre os itens da lista */
+    }
+
+    
+</style>
 </head>
 <body>
-    
+    <div class="container">
+            <div class="pixelart"></div>
+            
+            <h1>Trabalho Inspirado no T-Rex Game da Google</h1>
+            <p>Feito por Vinicius Viana, Rafael Tagliaferro, Marcos Vinicius e Vinicius da Costa</p>
+            <div class="pixelart2"></div>
+
+        </div>
 </body>
 </html>
